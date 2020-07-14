@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Mapbox.getInstance(this, "AQUÍ VA EL TOKEN PÚBLICO !!!!");
+        Mapbox.getInstance(this, "pk.eyJ1IjoiZGFvYyIsImEiOiJja2NseXZhb2gwNDJ6MzBwMjRkbDBpNHpzIn0.t6eDSPg3PKyir76B5xF4vw");
         setContentView(R.layout.activity_main);
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
