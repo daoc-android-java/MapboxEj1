@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "ute.griinf.daoc.mapboxej1"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 22
         //Aumente esta línea y ponga una versión instalada. Vea en el SDK manager
         ndkVersion '21.3.6528147'
         versionCode 1
@@ -19,6 +19,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    ndkVersion '21.3.6528147'
 }
 
 // Aumentar desde aquí...
